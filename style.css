@@ -1,0 +1,334 @@
+body {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+/* Style de l'aside */
+aside {
+  background-color: #949494;
+  width: 260px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  box-shadow: 1px 0 5px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  color: #fff;
+}
+
+/* Style de l'image de profil */
+aside .image {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+aside .image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+aside .info {
+  margin-bottom: 20px;
+}
+
+aside h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+aside hr {
+  border: none;
+  border-top: 1px solid #777;
+  margin-bottom: 10px;
+}
+
+aside p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.progress-bar {
+  background-color: #777;
+  height: 10px;
+  width: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress {
+  background-color: #fff;
+  height: 100%;
+}
+
+
+
+/* Style du header */
+header {
+  background-color: #fff;
+  height: 80px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  position:fixed;
+  top: 0;
+  left: 300px;
+  width: calc(100% - 300px);
+}
+
+/* Style des boutons de navigation */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-left: 450px;
+}
+
+nav li {
+  margin-left: 50px;
+}
+
+nav li:first-child {
+  margin-left: 0;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #333;
+  padding: 10px 20px;
+  border: 1px solid #333;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+nav a.active {
+  background-color: #ccc;
+  cursor: default;
+}
+
+
+
+/*qui sui-je*/
+main {
+  margin-left: 320px; /* ou une valeur de votre choix pour ajuster l'espacement */
+  padding: 20px;
+  margin-top: 100px;
+}
+
+/* Style pour les sections */
+section {
+  margin-bottom: 20px;
+}
+
+section h2 {
+  font-size: 24px;
+}
+
+section p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+#description {
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+
+#passe-temps {
+  background-color: #e6e6e6;
+  padding: 20px;
+}
+
+
+#Mes-réseaux {
+  background-color: #d9d9d9;
+  padding: 20px;
+}
+
+.reseaux {
+  display: flex;
+  justify-content:left;
+  align-items: center;
+}
+
+.reseaux a {
+  margin: 10px;
+}
+
+.reseaux img {
+  max-width: 100px;
+  max-height: 100px;
+}
+
+
+#Mon-Parcours {
+  background-color: #c9c9c9;
+  padding: 20px;
+}
+
+#Mon-Parcours h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#Mon-Parcours ul {
+  list-style: none;
+  padding: 0;
+}
+
+#Mon-Parcours li {
+  margin-bottom: 10px;
+}
+
+#Mon-Parcours .title {
+  font-weight: bold;
+}
+
+#Mon-Parcours .details {
+  color: #9b4a4a;
+}
+
+#Mon-Parcours .mention {
+  color: #333;
+  font-weight: bold;
+}
+
+
+
+/* Style spécifique à la page "Mes formations" */
+.main-formations {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.main-formations .formation {
+  width: calc(50% - 10px);
+  height: 200px;
+  background-color: #ccc;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.main-formations .formation:hover {
+  background-color: #eaeaea;
+}
+
+.main-formations .formation .name {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.main-formations .formation .entreprise {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.main-formations .formation .duration {
+  font-size: 14px;
+}
+
+.main-formations .formation .details {
+  display: none;
+  font-size: 14px;
+  text-align: center;
+}
+
+.main-formations .formation:hover .details {
+  display: block;
+}
+
+
+
+/*projet*/
+.projet {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.arrondi {
+  border-top-left-radius: 3vh;
+  border-bottom-left-radius: 3vh;
+  overflow: hidden;
+}
+
+.arrondi img {
+  width: 25vh;
+  height: auto;
+  display: block;
+}
+
+.description {
+  background-color: #f2f2f2;
+  padding: 10px;
+  flex: 1;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 3px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #2980b9;
+}
+
+
+
+
+#introduction p {
+  font-weight: bold;
+}
+
+#exercices ol {
+  list-style-type: decimal;
+}
+
+#exercices li {
+  margin-bottom: 10px;
+}
+
+#installation-paquets ol {
+  list-style-type: decimal;
+}
+
+#installation-paquets li {
+  margin-bottom: 10px;
+}
+
